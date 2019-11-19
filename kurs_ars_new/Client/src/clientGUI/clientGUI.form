@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="clientGUI.clientGUI">
+  <grid id="27dc6" binding="mainPanel" layout-manager="FormLayout">
+    <rowspec value="center:4dlu:noGrow"/>
+    <rowspec value="center:51px:noGrow"/>
+    <rowspec value="top:3dlu:grow"/>
+    <rowspec value="center:121px:grow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="fill:2dlu:grow"/>
+    <rowspec value="center:60px:grow"/>
+    <rowspec value="fill:2dlu:grow"/>
+    <rowspec value="top:60px:grow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="center:60px:grow"/>
+    <rowspec value="center:max(d;4px):noGrow"/>
+    <rowspec value="center:60px:grow"/>
+    <rowspec value="top:2dlu:noGrow"/>
+    <rowspec value="center:60px:grow"/>
+    <rowspec value="top:4dlu:noGrow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:140px:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:150px:grow"/>
+    <colspec value="fill:8px:grow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="fill:150px:grow"/>
+    <colspec value="fill:5dlu:grow"/>
+    <colspec value="fill:max(d;4px):noGrow"/>
+    <colspec value="fill:150px:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
+    <colspec value="fill:180px:grow"/>
+    <colspec value="fill:4dlu:noGrow"/>
+    <constraints>
+      <xy x="20" y="20" width="950" height="683"/>
+    </constraints>
+    <properties>
+      <background color="-16777216"/>
+      <enabled value="false"/>
+      <foreground color="-15329770"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="9e466" class="javax.swing.JComboBox" binding="secondBtnCBox">
+        <constraints>
+          <grid row="10" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="2" left="0" bottom="2" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <enabled value="true"/>
+          <model>
+            <item value="преподавателе"/>
+            <item value="студенте"/>
+            <item value="курсе"/>
+            <item value="аудитории"/>
+          </model>
+        </properties>
+      </component>
+      <component id="1d647" class="javax.swing.JRadioButton" binding="infoAboutRadioButton">
+        <constraints>
+          <grid row="10" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-16250872"/>
+          <foreground color="-1908252"/>
+          <text value="Сведения о"/>
+        </properties>
+      </component>
+      <component id="bd77c" class="javax.swing.JComboBox" binding="firstBtnCBox">
+        <constraints>
+          <grid row="8" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="2" left="0" bottom="2" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <enabled value="true"/>
+          <foreground color="-15856114"/>
+          <model>
+            <item value="преподавателей"/>
+            <item value="студентов"/>
+            <item value="курсов"/>
+            <item value="аудиторий"/>
+          </model>
+        </properties>
+      </component>
+      <component id="dc4af" class="javax.swing.JRadioButton" binding="fullListRadioButton">
+        <constraints>
+          <grid row="8" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-16250872"/>
+          <foreground color="-1908252"/>
+          <selected value="true"/>
+          <text value="Список"/>
+        </properties>
+      </component>
+      <component id="62c6b" class="javax.swing.JButton" binding="queryButton">
+        <constraints>
+          <grid row="1" column="11" row-span="3" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <autoscrolls value="true"/>
+          <background color="-1118482"/>
+          <foreground color="-15856114"/>
+          <horizontalTextPosition value="0"/>
+          <rolloverEnabled value="true"/>
+          <text value="Выполнить"/>
+        </properties>
+      </component>
+      <scrollpane id="de34b">
+        <constraints>
+          <grid row="1" column="1" row-span="6" col-span="9" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="a37a7" class="javax.swing.JTextArea" binding="serverOutput">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="4aa82" class="javax.swing.JFormattedTextField" binding="serverAddressTextField">
+        <constraints>
+          <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms top="2" left="0" bottom="2" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="2483c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <foreground color="-1118482"/>
+          <labelFor value="4aa82"/>
+          <text value="Адрес сервера"/>
+        </properties>
+      </component>
+      <component id="8e1a1" class="javax.swing.JButton" binding="studentByStream">
+        <constraints>
+          <grid row="6" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <foreground color="-15856114"/>
+          <text value="по потокам"/>
+          <verticalAlignment value="0"/>
+        </properties>
+      </component>
+      <component id="9c669" class="javax.swing.JButton" binding="tutorsByCourses">
+        <constraints>
+          <grid row="8" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <foreground color="-15856114"/>
+          <text value="СППКу"/>
+        </properties>
+      </component>
+      <component id="d2445" class="javax.swing.JButton" binding="studentByGroup">
+        <constraints>
+          <grid row="10" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <enabled value="true"/>
+          <foreground color="-15856114"/>
+          <hideActionText value="false"/>
+          <text value="по группам"/>
+        </properties>
+      </component>
+      <component id="cc4db" class="javax.swing.JButton" binding="coursesForStudent">
+        <constraints>
+          <grid row="12" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <foreground color="-15856114"/>
+          <text value="СККС"/>
+        </properties>
+      </component>
+      <component id="acc9b" class="javax.swing.JButton" binding="classroomsByTime">
+        <constraints>
+          <grid row="14" column="11" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <foreground color="-15856114"/>
+          <text value="аудитории"/>
+        </properties>
+      </component>
+      <component id="af0ff" class="javax.swing.JTextField" binding="portTextField">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="10" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+          <forms top="2" left="0" bottom="2" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="7902a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <enabled value="true"/>
+          <foreground color="-1118482"/>
+          <labelFor value="af0ff"/>
+          <text value="Порт"/>
+        </properties>
+      </component>
+      <component id="63fdb" class="javax.swing.JButton" binding="disconnectButton">
+        <constraints>
+          <grid row="14" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="2" left="0" bottom="2" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <text value="Отключиться"/>
+        </properties>
+      </component>
+      <component id="e3e82" class="javax.swing.JButton" binding="connectButton">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="2" left="0" bottom="2" right="0" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <foreground color="-15856114"/>
+          <text value="Подключиться"/>
+        </properties>
+      </component>
+      <component id="68ba8" class="javax.swing.JComboBox" binding="thirdBtnCBox">
+        <constraints>
+          <grid row="14" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="2" left="0" bottom="2" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <enabled value="true"/>
+          <model>
+            <item value="преподавателе"/>
+            <item value="студенте"/>
+            <item value="курсе"/>
+          </model>
+        </properties>
+      </component>
+      <component id="d47f6" class="javax.swing.JComboBox" binding="fourthBtnCBox">
+        <constraints>
+          <grid row="12" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <forms top="2" left="0" bottom="2" right="0" defaultalign-horz="false" defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-1118482"/>
+          <enabled value="true"/>
+          <model>
+            <item value="преподавателя"/>
+            <item value="студента"/>
+            <item value="курс"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a1479" class="javax.swing.JRadioButton" binding="modifyRadioButton">
+        <constraints>
+          <grid row="14" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-16250872"/>
+          <foreground color="-1908252"/>
+          <text value="Изменить данные о"/>
+        </properties>
+      </component>
+      <component id="c9489" class="javax.swing.JRadioButton" binding="addRadioButton">
+        <constraints>
+          <grid row="12" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <background color="-16250872"/>
+          <foreground color="-1908252"/>
+          <text value="Добавление"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="querySelectionGroup">
+      <member id="dc4af"/>
+      <member id="1d647"/>
+      <member id="a1479"/>
+      <member id="c9489"/>
+    </group>
+  </buttonGroups>
+</form>
